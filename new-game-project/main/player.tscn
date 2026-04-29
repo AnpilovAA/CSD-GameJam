@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cgrge02lah4v1" path="res://main/player.gd" id="1_ou4ca"]
 
 [node name="Player" type="Area2D" unique_id=791871348]
+gravity_space_override = 1
 script = ExtResource("1_ou4ca")
 metadata/_edit_group_ = true
 
