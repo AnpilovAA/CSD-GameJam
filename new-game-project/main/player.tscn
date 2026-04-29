@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c5jhjem4j5dg0"]
+
+[ext_resource type="Script" uid="uid://cgrge02lah4v1" path="res://main/player.gd" id="1_ou4ca"]
+
+[node name="Player" type="Area2D" unique_id=791871348]
+script = ExtResource("1_ou4ca")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=317671611]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1515179036]
+
+[node name="Label" type="Label" parent="." unique_id=236349172]
+offset_right = 40.0
+offset_bottom = 23.0

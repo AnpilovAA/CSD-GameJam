@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bd8eua4uiffrk"]
+
+[ext_resource type="Script" uid="uid://bsg6hprox6eoq" path="res://mob/mob.gd" id="1_7b8ug"]
+
+[node name="Mob" type="Area2D" unique_id=1729326277]
+script = ExtResource("1_7b8ug")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1742477512]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=174576214]
+
+[node name="Label" type="Label" parent="." unique_id=1920150371]
+offset_right = 40.0
+offset_bottom = 23.0
