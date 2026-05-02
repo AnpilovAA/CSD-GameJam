@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dn24vf603vvr0"]
+
+[ext_resource type="Script" uid="uid://d0hemlu3ps4re" path="res://player/character_body_2d.gd" id="1_fui21"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_liy72"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fui21"]
+size = Vector2(56, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fui21"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1738950131]
+script = ExtResource("1_fui21")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=357515977]
+shape = SubResource("RectangleShape2D_fui21")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060738782]
+sprite_frames = SubResource("SpriteFrames_fui21")
+
+[node name="Label" type="Label" parent="." unique_id=608532739]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1124360143]
+process_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1261513857]
+scale = Vector2(0.475, 0.475)
+texture = ExtResource("1_liy72")
