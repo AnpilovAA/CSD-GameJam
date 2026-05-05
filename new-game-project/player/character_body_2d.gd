@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -1800.0
+const ROLL = 50
 
 var screen_size
 
@@ -29,6 +30,13 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	
+	if Input.is_action_just_pressed("roll") and is_on_floor():
+		print("jump ", position.x)
+		if Input.is_action_pressed("move_right"):
+			position.x += ROLL
+			print("roll + rigth ", position)
+		if Input.is_action_pressed("move_left"):
+			position.x -= ROLL
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("move_left", "move_right")
